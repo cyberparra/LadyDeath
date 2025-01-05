@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LadyDeath/title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>LadyDeath</h1>
+    <div class="game-content">
+      <div class="game-left">
+        <div class="LadyDeath">
+          
+        </div>
+      </div>
+      <div class="game-right">
+        <div class="word">
+          <!-- The current word will be dynamically generated using JavaScript -->
+        </div>
+        <div class="attempts">
+          Tentativi rimanenti: <span id="attemptsLeft"></span>
+        </div>
+        <div class="letters">
+          <!-- The letters will be dynamically generated using JavaScript -->
+        </div>
+        <button id="resetButton" class="reset-button">Nuova Partita</button>
+      </div>
+    </div>
+    <div class="modal" id="messageModal">
+      <div class="modal-content">
+        <div class="modal-message"></div>
+        <button class="close-modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="LadyDeath.js"></script>
+</body>
+</html>
