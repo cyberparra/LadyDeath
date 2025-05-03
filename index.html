@@ -2,21 +2,31 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>LadyDeath</title>
-  <title>LadyDeath/title</title>
+  <title>LadyDeath</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>LadyDeath</h1>
-    <div class="game-content">
+    
+    <!-- Level selection menu -->
+    <div id="levelSelection" class="level-selection">
+      <h2>Scegli il livello</h2>
+      <div class="level-buttons">
+        <button id="levelEasy" class="level-button">Facile</button>
+        <button id="levelMedium" class="level-button">Medio</button>
+        <button id="levelHard" class="level-button">Difficile</button>
+      </div>
+    </div>
+    
+    <div class="game-content" id="gameContent" style="display: none;">
       <div class="game-left">
         <div class="LadyDeath">
           
         </div>
       </div>
       <div class="game-right">
+        <div class="difficulty-label">Livello: <span id="currentLevel"></span></div>
         <div class="word">
           <!-- The current word will be dynamically generated using JavaScript -->
         </div>
